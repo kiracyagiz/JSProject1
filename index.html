@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="flex justify-center mt-28 font-lobster">
+      <h1 class="text-bold text-7xl font-bold">Snapshot</h1>
+    </header>
+
+    <div class="search-bar flex mt-12 justify-center">
+        <input type="text" id="input" placeholder="Search" class="bg-gray-300 placeholder:text-black w-96 h-10 p-2  border border-gray-500 border-1">
+        <img src="images/searchIcon.svg" alt="" class="bg-gray-500 cursor-pointer">
+    </div>
+
+    <div class="buttons flex justify-center gap-x-5 mt-10">
+        <button id="mensButton" class="bg-black text-white w-20 h-8 rounded-md ">MClothing</button>
+        
+        <button id="jeweleryButton" class="bg-black text-white w-20 h-8 rounded-md" >Jewelery</button>
+        <button id="electronicsButton" class="bg-black text-white w-20 h-8 rounded-md">Electronics</button>
+        <button id="womensButton" class="bg-black text-white w-20 h-8 rounded-md">WClothing</button>
+    </div>
+
+
+
+
+    <div class="title justify-center flex mt-14">
+        <h1 class="font-lobster text-3xl " id="mainTitle">Man's Clothing Pictures</h1>
+    </div>
+    <div class="loadingScreen flex justify-center " id="loadingScreen">
+      <img src="images/Loading_icon.gif" alt="">
+    </div>
+    <div class="pictures flex justify-center mt-14  ">
+
+      <div id="productList" class="grid grid-cols-4 sm:grid-cols-1 gap-32">
+        </div>
+
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
